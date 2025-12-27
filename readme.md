@@ -452,4 +452,3 @@ Proyek ini bersifat **Private** dan tidak untuk distribusi publik.
 
 Jika Anda memiliki pertanyaan atau saran, silakan buat Issue di repository ini.
 
----
