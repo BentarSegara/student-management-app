@@ -9,14 +9,10 @@ import {
 } from "react-native";
 import StudentList from "../components/studentList";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
-import { request } from "../../nodejs-app/request";
 import Loading from "../components/loading";
 import { destroyMahasiswa, getMahasiswa } from "../request/request-student";
 
 const Home = () => {
-  const getURL = "http://192.168.0.102:3000/mahasiswa/detail";
-  const deleteURL = "http://192.168.0.102:3000/mahasiswa/delete";
-
   const navigation = useNavigation();
   const [isLoading, setIsLoading] = useState(false);
   const [modalMsg, setModalMsg] = useState("");

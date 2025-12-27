@@ -11,12 +11,10 @@ import {
   ActivityIndicator,
   StyleSheet,
 } from "react-native";
-import { request } from "../../nodejs-app/request";
 import Loading from "../components/loading";
 import { updateMahasiswa } from "../request/request-student";
 
 const UpdatePage = ({ route }) => {
-  const url = "http://192.168.0.102:3000/mahasiswa/update";
   const navigation = useNavigation();
   const [isLoading, setIsLoading] = useState(false);
   const [isCreateFailed, setIsCreateFailed] = useState(false);
@@ -76,11 +74,6 @@ const UpdatePage = ({ route }) => {
       }
     }
   };
-
-  useEffect(() => {
-    console.log("currStudent: ", currStudent);
-    console.log("student: ", student);
-  }, []);
 
   return (
     <View

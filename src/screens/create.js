@@ -7,8 +7,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  Modal,
-  ActivityIndicator,
   StyleSheet,
 } from "react-native";
 import Loading from "../components/loading";

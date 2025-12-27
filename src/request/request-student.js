@@ -1,6 +1,6 @@
 import { request } from "./request.js";
 
-const BASEURL = "http://192.168.0.102:3000/mahasiswa";
+const BASEURL = "http://192.168.0.100:3000/mahasiswa";
 
 export const getMahasiswa = async () =>
   await request({ url: `${BASEURL}/`, method: "get" });
@@ -17,12 +17,14 @@ export const createMahasiswa = async ({ columns, data }) => {
 };
 
 export const updateMahasiswa = async ({ id, columns, data }) => {
+  console.log(data);
+
   return await request({
     url: `${BASEURL}/update`,
     params: { id: id },
     data: {
       columns: columns,
-      data: data,
+      new_data: data,
     },
     method: "put",
   });
