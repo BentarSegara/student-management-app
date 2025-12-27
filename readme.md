@@ -2,10 +2,11 @@
 
 Aplikasi mobile untuk mengelola data mahasiswa yang dibangun dengan **React Native** dan **Expo**. Aplikasi ini menyediakan fitur CRUD (Create, Read, Update, Delete) lengkap untuk manajemen data mahasiswa dengan antarmuka yang modern dan responsif.
 
-![React Native](https://img.shields.io/badge/React_Native-0.81.5-blue)
-![Expo](https://img.shields.io/badge/Expo-54.0.23-white)
-![React](https://img.shields.io/badge/React-19.1.0-61DAFB)
-![License](https://img.shields.io/badge/License-Private-red)
+<p>
+<img src="https://img.shields.io/badge/React_Native-0.81.5-61DAFB?logo=react" alt="React Native">
+<img src="https://img.shields.io/badge/Expo-54.0.29-000020?logo=expo" alt="Expo">
+<img src="https://img.shields.io/badge/License-Private-red?logo=license-private" alt="License">
+</p>
 
 ---
 
@@ -40,18 +41,21 @@ Aplikasi mobile untuk mengelola data mahasiswa yang dibangun dengan **React Nati
 ## 🛠 Tech Stack
 
 ### Frontend (Mobile App)
-| Teknologi | Versi | Deskripsi |
-|-----------|-------|-----------|
-| React Native | 0.81.5 | Framework utama untuk pengembangan mobile |
-| Expo | 54.0.23 | Platform untuk mempermudah development React Native |
-| React | 19.1.0 | Library JavaScript untuk membangun UI |
-| React Navigation | 7.x | Navigasi antar layar aplikasi |
-| Axios | 1.13.2 | HTTP client untuk komunikasi dengan API |
-| Lucide React Native | 0.554.0 | Library ikon modern |
-| React Native Picker | 2.11.4 | Komponen dropdown picker |
+
+| Teknologi           | Versi   | Deskripsi                                           |
+| ------------------- | ------- | --------------------------------------------------- |
+| React Native        | 0.81.5  | Framework utama untuk pengembangan mobile           |
+| Expo                | 54.0.23 | Platform untuk mempermudah development React Native |
+| React               | 19.1.0  | Library JavaScript untuk membangun UI               |
+| React Navigation    | 7.x     | Navigasi antar layar aplikasi                       |
+| Axios               | 1.13.2  | HTTP client untuk komunikasi dengan API             |
+| Lucide React Native | 0.554.0 | Library ikon modern                                 |
+| React Native Picker | 2.11.4  | Komponen dropdown picker                            |
 
 ### Backend Requirements
+
 Aplikasi ini memerlukan backend server yang berjalan pada endpoint:
+
 - Base URL: `http://192.168.0.102:3000`
 
 ---
@@ -109,17 +113,20 @@ Sebelum menjalankan aplikasi, pastikan Anda memiliki:
 ## 🚀 Instalasi
 
 ### 1. Clone Repository
+
 ```bash
 git clone <repository-url>
 cd student-management-app
 ```
 
 ### 2. Install Dependensi
+
 ```bash
 npm install
 ```
 
 ### 3. Verifikasi Instalasi
+
 ```bash
 npx expo doctor
 ```
@@ -149,6 +156,7 @@ npm run web
 ```
 
 ### Menggunakan Expo Go
+
 1. Jalankan `npm start`
 2. Scan QR code yang muncul dengan aplikasi Expo Go
 3. Aplikasi akan terbuka di perangkat Anda
@@ -171,18 +179,19 @@ const BASEURL = "http://192.168.0.102:3000/mahasiswa";
 
 ### API Endpoints yang Digunakan
 
-| Method | Endpoint | Deskripsi |
-|--------|----------|-----------|
-| GET | `/mahasiswa/` | Mengambil semua data mahasiswa |
-| POST | `/mahasiswa/store` | Menambah mahasiswa baru |
-| PUT | `/mahasiswa/update?id={id}` | Memperbarui data mahasiswa |
-| DELETE | `/mahasiswa/destroy?id={id}` | Menghapus data mahasiswa |
+| Method | Endpoint                     | Deskripsi                      |
+| ------ | ---------------------------- | ------------------------------ |
+| GET    | `/mahasiswa/`                | Mengambil semua data mahasiswa |
+| POST   | `/mahasiswa/store`           | Menambah mahasiswa baru        |
+| PUT    | `/mahasiswa/update?id={id}`  | Memperbarui data mahasiswa     |
+| DELETE | `/mahasiswa/destroy?id={id}` | Menghapus data mahasiswa       |
 
 ---
 
 ## 📦 Dokumentasi Komponen
 
 ### 1. Loading Component
+
 **Lokasi:** `src/components/loading.js`
 
 Komponen modal untuk menampilkan loading indicator saat proses data sedang berlangsung.
@@ -200,6 +209,7 @@ Komponen modal untuk menampilkan loading indicator saat proses data sedang berla
 ---
 
 ### 2. StudentList Component
+
 **Lokasi:** `src/components/studentList.js`
 
 Komponen FlatList untuk menampilkan daftar mahasiswa dengan performa optimal.
@@ -224,6 +234,7 @@ Komponen FlatList untuk menampilkan daftar mahasiswa dengan performa optimal.
 ---
 
 ### 3. StudentRow Component
+
 **Lokasi:** `src/components/studentRow.js`
 
 Komponen untuk menampilkan satu baris data mahasiswa dengan tombol aksi.
@@ -244,6 +255,7 @@ Komponen untuk menampilkan satu baris data mahasiswa dengan tombol aksi.
 | `onDelete` | Function | Callback untuk delete |
 
 **Struktur Object Student:**
+
 ```javascript
 {
   id: Number,
@@ -258,6 +270,7 @@ Komponen untuk menampilkan satu baris data mahasiswa dengan tombol aksi.
 ## 📱 Layar Aplikasi
 
 ### 1. Splash Screen
+
 **File:** `src/screens/splashscreen.js`
 
 - Layar pembuka yang ditampilkan selama 1 detik
@@ -267,9 +280,11 @@ Komponen untuk menampilkan satu baris data mahasiswa dengan tombol aksi.
 ---
 
 ### 2. Home Screen (Dashboard)
+
 **File:** `src/screens/home.js`
 
 Layar utama aplikasi dengan fitur:
+
 - **Header**: Judul aplikasi dengan desain menarik
 - **Info Cards**: Menampilkan total mahasiswa dan jumlah program studi
 - **Search Bar**: Pencarian mahasiswa berdasarkan nama
@@ -279,9 +294,11 @@ Layar utama aplikasi dengan fitur:
 ---
 
 ### 3. Create Screen
+
 **File:** `src/screens/create.js`
 
 Form untuk menambahkan mahasiswa baru dengan field:
+
 - **Nama Lengkap**: Input text untuk nama mahasiswa
 - **NPM**: Input text untuk Nomor Pokok Mahasiswa
 - **Program Studi**: Dropdown picker dengan pilihan:
@@ -291,15 +308,18 @@ Form untuk menambahkan mahasiswa baru dengan field:
   - Sains Data
 
 **Validasi:**
+
 - Semua field wajib diisi
 - NPM harus unik untuk setiap mahasiswa
 
 ---
 
 ### 4. Update Screen
+
 **File:** `src/screens/update.js`
 
 Form untuk memperbarui data mahasiswa yang sudah ada:
+
 - Data mahasiswa yang dipilih akan otomatis terisi di form
 - Semua field dapat diedit
 - Validasi sama seperti form Create
@@ -309,6 +329,7 @@ Form untuk memperbarui data mahasiswa yang sudah ada:
 ## 🔧 Request Module
 
 ### Universal Request Wrapper
+
 **File:** `src/request/request.js`
 
 Wrapper untuk Axios yang menstandarisasi response:
@@ -335,14 +356,15 @@ const response = await request({
 ---
 
 ### Student API Functions
+
 **File:** `src/request/request-student.js`
 
-| Function | Deskripsi |
-|----------|-----------|
-| `getMahasiswa()` | Mengambil semua data mahasiswa |
-| `createMahasiswa({ columns, data })` | Membuat mahasiswa baru |
-| `updateMahasiswa({ id, columns, data })` | Memperbarui data mahasiswa |
-| `destroyMahasiswa(id)` | Menghapus data mahasiswa |
+| Function                                 | Deskripsi                      |
+| ---------------------------------------- | ------------------------------ |
+| `getMahasiswa()`                         | Mengambil semua data mahasiswa |
+| `createMahasiswa({ columns, data })`     | Membuat mahasiswa baru         |
+| `updateMahasiswa({ id, columns, data })` | Memperbarui data mahasiswa     |
+| `destroyMahasiswa(id)`                   | Menghapus data mahasiswa       |
 
 ---
 
@@ -350,15 +372,15 @@ const response = await request({
 
 Aplikasi menggunakan palet warna yang konsisten:
 
-| Warna | Hex Code | Penggunaan |
-|-------|----------|------------|
-| Slate 700 | `#334155` | Header background |
-| Slate 100 | `#F1F5F9` | Background utama |
-| Slate 50 | `#F8FAFC` | Card background |
-| Teal 500 | `#14B8A6` | Aksen & tombol utama |
+| Warna       | Hex Code  | Penggunaan                       |
+| ----------- | --------- | -------------------------------- |
+| Slate 700   | `#334155` | Header background                |
+| Slate 100   | `#F1F5F9` | Background utama                 |
+| Slate 50    | `#F8FAFC` | Card background                  |
+| Teal 500    | `#14B8A6` | Aksen & tombol utama             |
 | Emerald 500 | `#10B981` | Tombol tambah & indikator sukses |
-| Rose 500 | `#F43F5E` | Tombol hapus |
-| Slate 400 | `#94A3B8` | Placeholder text |
+| Rose 500    | `#F43F5E` | Tombol hapus                     |
+| Slate 400   | `#94A3B8` | Placeholder text                 |
 
 ---
 
@@ -376,6 +398,7 @@ NavigationContainer
 ```
 
 **Konfigurasi:**
+
 - Header tersembunyi (`headerShown: false`)
 - Transisi default native stack
 
