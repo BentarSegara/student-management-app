@@ -2,7 +2,7 @@
 
 Aplikasi mobile untuk mengelola data mahasiswa yang dibangun dengan **React Native** dan **Expo**. Aplikasi ini menyediakan fitur CRUD (Create, Read, Update, Delete) lengkap untuk manajemen data mahasiswa dengan antarmuka yang modern dan responsif.
 
-![React Native](https://img.shields.io/badge/React_Native-0.81.5-blue)
+![React Native](https://img.shields.io/badge/React_Native-0.81.5-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Expo](https://img.shields.io/badge/Expo-54.0.23-white)
 ![React](https://img.shields.io/badge/React-19.1.0-61DAFB)
 ![License](https://img.shields.io/badge/License-Private-red)
