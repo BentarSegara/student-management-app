@@ -85,7 +85,7 @@ const UpdatePage = ({ route }) => {
       <Loading visible={isLoading} loadingMsg={"Menambahkan Data Mahasiswa"} />
       <View style={styles.header}>
         <Text style={{ fontSize: 20, fontWeight: "bold", color: "white" }}>
-          ➕ Tambah Mahasiswa
+          ➕ Edit Data Mahasiswa
         </Text>
         <Text style={{ fontWeight: "300", color: "white" }}>
           Masukkan data mahasiswa baru
